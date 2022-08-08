@@ -1,0 +1,34 @@
+﻿@model WebAppHospitalManagement.Models.Hospital
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Hospital</h4>
+    <hr />
+    <dl class="dl-horizontal bg-info">
+        <dt>
+            @Html.DisplayNameFor(model => model.hname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.haddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.haddress)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
